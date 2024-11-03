@@ -1,0 +1,33 @@
+Multi-armed bandits are a classic problem in probability theory and machine learning that exemplifies the exploration-exploitation tradeoff. Here are some key points about multi-armed bandits:
+
+Problem setup:
+
+There are multiple "arms" (choices/actions) available, each with an unknown probability distribution of rewards.
+The goal is to maximize total reward over time by sequentially selecting arms.
+
+Key challenge:
+Balancing exploration (trying different arms to learn about their rewards) vs exploitation (selecting the arm that seems best so far).
+
+Common algorithms:
+Epsilon-greedy: Choose the best arm with probability 1-ε, and explore randomly with probability ε.
+Upper Confidence Bound (UCB): Select arms based on their estimated value plus an uncertainty bonus.
+Thompson Sampling: Sample from posterior distributions of arm values and choose the highest.
+
+Applications:
+A/B testing and website optimization
+Clinical trials
+Online advertising
+Recommendation systems
+
+Advantages over traditional A/B testing:
+Can adapt more quickly as data is gathered.
+Minimizes "regret" by shifting traffic to better performing options.
+
+Variants:
+Contextual bandits: Arm selection depends on contextual information.
+Non-stationary bandits: Reward distributions change over time.
+
+Challenges:
+More complex to implement than simple A/B tests.
+Requires careful tuning of exploration parameters.
+Multi-armed bandits provide a framework for making sequential decisions under uncertainty, balancing learning about the environment with maximizing rewards based on current knowledge.
