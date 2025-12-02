@@ -1,1 +1,1 @@
-My personal notes for sharing.   
+My personal notes.   
